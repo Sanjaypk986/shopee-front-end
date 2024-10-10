@@ -1,7 +1,7 @@
 
 const BillEstimatePage = () => {
   return (
-    <div>BillEstimatePage</div>
+    <div className="min-h-screen">BillEstimatePage</div>
   )
 }
 
