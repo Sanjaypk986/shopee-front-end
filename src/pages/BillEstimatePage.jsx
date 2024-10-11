@@ -36,7 +36,7 @@ const BillEstimatePage = () => {
   }, []);
 
   return (
-    <div className='min-h-[calc(100vh-140px)]'>
+    <div className="min-h-screen">
       <p className="text-center text-3xl font-semibold mb-5 py-5">STATIONERY - BILL ESTIMATE</p>
       <div>
         <Container>
