@@ -20,7 +20,7 @@ const rows = [
 
 const BillEstimatePage = () => {
   return (
-    <div>
+    <div className='min-h-[calc(100vh-140px)]'>
       <p className="text-center text-3xl font-semibold mb-5 py-5">STATIONERY - BILL ESTIMATE</p>
       <div>
         <Container>
