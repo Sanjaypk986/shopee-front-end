@@ -1,8 +1,25 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import Card from "../components/Card";
 import "./HomePage.css";
+import {getAllProducts} from '../api'
 
 const HomePage = () => {
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await getAllProducts();
+        setProducts(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchProducts();
+  }, []);
+  
+
   const cardsData = [
     {title: "Soft Eraser", price: "Price: $34", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHaMc0vuicqVqIOq70Ql_W9zWTMcR0lCSYw&s" },
     {title: "Raynolds Pen", price: "Price: $12", imageUrl: "data:image/jpeg;base64,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" },
@@ -17,14 +34,16 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="home-page-container">
+    <div className="home-page-container h-screen">
       <div className="grid-container">
-        {cardsData.map((card, index) => (
+        {products.map((card, index) => (
           <Card
             key={index}
-            title={card.title}
+            title={card.name}
             price={card.price}
+            stock={card.quantity}
             imageUrl={card.imageUrl}
+            id={card._id}
           />
         ))}
       </div>
