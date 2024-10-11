@@ -17,3 +17,11 @@
   .card-description {
     @apply text-sm text-gray-600;
   }
+
+  .add-button {
+    @apply bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300;
+  }
+  
+  .add-button:hover {
+    @apply bg-blue-600 shadow-lg transform scale-105;
+  }
