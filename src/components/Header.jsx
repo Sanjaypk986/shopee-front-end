@@ -6,7 +6,7 @@ const Header = () => {
     <header className="bg-blue-950 py-6 px-4">
       <div className="container mx-auto  flex justify-between items-center">
         <span className="text-xl font-bold text-white tracking-wider">
-         <Link to={'/'}> STATIONERYHIVE</Link>
+         <Link to={'/'}> StationaryHive</Link>
         </span>
         <div>
           <ul className="flex items-center text-white text-lg gap-4">
