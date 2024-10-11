@@ -1,0 +1,19 @@
+.card-container {
+    @apply max-w-sm border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg overflow-hidden;
+  }
+  
+  .card-image {
+    @apply w-full h-48 object-cover;
+  }
+  
+  .card-content {
+    @apply p-4;
+  }
+  
+  .card-title {
+    @apply text-lg font-semibold mb-2;
+  }
+  
+  .card-description {
+    @apply text-sm text-gray-600;
+  }
