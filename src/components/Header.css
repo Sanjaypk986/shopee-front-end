@@ -1,0 +1,10 @@
+.header-link:hover {
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.05);
+    color: #7e8eee;
+  }
+  
+  .header-link {
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
